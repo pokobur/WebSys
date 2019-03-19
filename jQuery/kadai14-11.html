@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>jQueryの例</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      count = 0;
+      
+      $(function() {
+        $("#top").on("click", addTop);
+        $("#bottom").on("click", addBottom);
+        $("#clear").on("click", clear);
+        $("#erase").on("click", Doerase);
+      });
+
+      function addTop() {
+        count++;
+        $("#list").prepend("<li>追加("+count+")</li>");
+      }
+      function addBottom() {
+        count++;
+         $("#list").append("<li>追加("+count+")</li>");
+      }
+      function clear() {
+          $("li").empty();
+      }
+      function Doerase() {
+          $("#list > li:last").replaceWith("");
+      }
+    </script>
+  </head>
+  <body>
+    <button id="top">最初に追加</button>
+    <button id="bottom">最後に追加</button>
+    <button id="clear">クリア</button>
+    <button id="erase">最後を削除</button>
+    <ul id="list">
+      <li>最初からある要素</li>
+    </ul>
+  </body>
+</html>

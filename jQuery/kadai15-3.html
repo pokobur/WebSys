@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>配列</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function() {
+    $.getJSON("array2.json",
+        function(data) {
+            var str="";
+                for(var i=0; i<data.length; i++) {
+                    str += "(" + data[i] + ")" ;
+            }
+            $("#dest").html(str);
+        }
+    );
+});
+</script>
+</head>
+<body>
+<pre id="dest"></pre>
+</body>
+</html>

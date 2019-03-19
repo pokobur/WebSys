@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>jQueryの例</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(function() {
+        $("#menu > li:contains('パスタ')").html("ピザ");
+      });
+
+    </script>
+  </head>
+  <body>
+    <ul id="menu">
+      <li>パスタ</li>
+      <li>カルパッチョ</li>
+      <li>リゾット</li>
+      <li>ドルチェ</li>
+    </ul>
+  </body>
+</html>

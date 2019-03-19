@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>要素の中身</title>
+    <script>
+      var menu = ["焼肉", "寿司", "カレー", "ラーメン", "アイス"];
+      var counter = 0;
+      function change() {
+        counter = menu++;
+        var f1 = document.getElementById("f1");
+        f1.innerHTML = "焼肉";
+        var f2 = document.getElementById("f2");
+        f2.innerHTML = "寿司";
+      }
+    </script>
+  </head>
+  <body>
+    <div><span id="f1">焼肉</span>か<span id="f2">寿司</span>
+    かそれが問題だ</div>
+    <button onclick="change();">内容変更！</button>
+  </body>
+</html>

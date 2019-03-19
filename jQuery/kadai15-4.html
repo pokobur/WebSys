@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>15-4</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(function() {
+    $.getJSON("object.json",
+        function(data) {
+            var str="name=" + data.name + "\n";
+            str += "price=" + data.price + "\n";
+            $("#dest").html(str);
+        }
+    );
+});
+</script>
+</head>
+<body>
+<pre id="dest"></pre>
+</body>
+</html>

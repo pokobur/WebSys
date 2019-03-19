@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>左と右</title>
+    <script>
+        function print(data) {
+            var output = document.getElementById("output");
+            output.innerHTML += data;
+        }
+        function println(data) { print(data + "<br>"); }
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    <button onclick="print('左');">左</button>
+    <button onclick="print('右');">右</button>
+</body>
+</html>

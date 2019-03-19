@@ -1,0 +1,23 @@
+[
+    {
+         "name" : "Taro Joho",
+         "born" : "1988",
+         "nation" : "Japan"
+    },
+    {
+        "name" : "James Brown",
+        "born" : "1933",
+        "nation" : "USA"
+    },
+    {
+        "name" : "Tora Tanaka",
+        "born" : "1916",
+        "nation" :"japan"
+    },
+    {
+        "name" : "Antoni Gaudi",
+        "born" : "1852",
+        "nation" : "Spain"
+    }
+
+]

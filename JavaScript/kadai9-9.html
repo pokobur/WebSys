@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset=UTF-8> 
+    <title>課題9-9</title>
+    <script>
+      function print(data) {
+        var output = document.getElementById("output");
+        output.innerHTML += data;
+      }
+      function println(data) { print(data+"<br>"); }
+    </script>
+  </head>
+  <body>
+    <h1>掛け算九九</h1>
+
+    <div id="output"></div>
+
+    <script>
+        for (var i=1; i<=9; i++){
+            for (var j=1; j<=9; j++){
+              print(j*i + " ");
+              hoge=i*j + " ";
+            }
+            println(hoge);
+            }
+    </script>
+  </body>
+</html>
+
+/*
+課題9-9+
+以下のプログラムで、九九の表をWebページに表示するように●、■、▲の部分を埋めよ。
+※ Webページへの表示は、補足事項にある print(), println()を使用すれば良い。
+※ 各列の位置は、ずれていても構わない。 
+for (var i = ●; i <= ■; i++) { 
+  for (var j = ●; j <= ■; j++) {
+    ▲
+  }
+  println();
+}
+*/

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>出入</title>
+    <script>
+      function print(data) {
+        var output = document.getElementById("output");
+        output.innerHTML += data;
+      }
+      function println(data) { print(data+"<br>"); }
+    </script>
+  </head>
+  <body>
+    <div style="width:100px;height:100px;background-color:red"
+     onmouseover="console.log('入');" onmouseout="console.log('出');">
+    </div>
+    <div id="output"></div>
+  </body>
+</html>

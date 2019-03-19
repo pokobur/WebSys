@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>松竹梅</title>
+    <script>
+      function print(data) {
+        var output = document.getElementById("output");
+        output.innerHTML += data;
+      }
+      function println(data) { print(data+"<br>"); }
+      function talk(e) {
+        print(e.value);
+      }
+    </script>
+  </head>
+  <body>
+	<input type="button" value="松" onmousedown="print(value)" onmouseup="print('壱')">
+	<input type="button" value="竹" onmousedown="print(value)" onmouseup="print('弐')">
+	<input type="button" value="梅" onmousedown="print(value)" onmouseup="print('参')">	
+    <div id="output"></div>
+  </body>
+</html>

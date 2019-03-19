@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+</head>
+<body>
+
+<script>
+function KeyDown(event){
+    var key_code = String.fromCharCode(event.keyCode);
+
+    console.log("code:" + event.keyCode);
+    console.log("chr:" + key_code);
+}
+if(document.addEventListener){
+ document.addEventListener("keydown" , KeyDown);
+}
+
+</script>
+</body>
+</html>

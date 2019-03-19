@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>課題12-9</title>
+    </head>
+    <script>
+        var timer;
+        function check(){
+        var timer = setInterval(output,1000);
+        }
+        function output(){
+            open('kadai12-6-2.html', null, 'width=300,height=100');
+            clearInterval(timer);
+        }
+
+    </script>
+<body>
+     <button onclick="check();">確認</button>
+     <div id="output"></div>
+</body>     
+</html>

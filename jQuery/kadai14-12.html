@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>モグラさん</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+var num = 0;
+var score = 0;
+var tout;
+$(function() {
+    
+    $("img").on("click",check);
+    appear(); 
+});
+function appear() { 
+    num = Math.floor(Math.random()*9+1);
+    $("#"+num).attr("src", "mogura.png");
+
+    tout = setTimeout(vanish, Math.random()*2000);
+}
+function vanish() { 
+    $("#"+num).attr("src", "none.png");
+    num = 0;
+    
+    setTimeout(appear, Math.random()*1000);
+}
+function check() {
+    var id = $(this).attr("id");
+    if (id == num) {
+        score++;
+        $("#score").html(score);
+        clearTimeout(tout);
+        vanish();
+    }
+}
+</script>
+</head>
+<body>
+    <div>
+        <img id="1" src="none.png">
+        <img id="2" src="none.png">
+        <img id="3" src="none.png"><br>
+        <img id="4" src="none.png">
+        <img id="5" src="none.png">
+        <img id="6" src="none.png"><br>
+        <img id="7" src="none.png">
+        <img id="8" src="none.png">
+        <img id="9" src="none.png"><br>
+        score: <span id="score">0</span>
+    </div>
+</body>
+</html>

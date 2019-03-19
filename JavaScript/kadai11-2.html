@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="ja"> 
+<head> 
+<meta "charset=UTF-8"> 
+<title>課題２</title> 
+</head> 
+<body>
+<form method=post action="http://www.rsch.tuis.ac.jp/~ohmi/sys-prog/printenv.cgi">
+あやしいアンケート
+<p>
+    好きな色を選んでください
+        <select name="color">
+            <option selected value="0">指定なし</option>
+            <option value="1">赤色</option>
+            <option value="2">青色</option>
+            <option value="3">黄色</option>
+            <option value="4">どどめ色</option>
+            <option value="5">透明</option>
+        </select>
+        </p>
+<p>あなたの血液型は?<br>
+<input type=radio name="blood" value="1">A型
+<input type=radio name="blood" value="2">B型
+<input type=radio name="blood" value="3">O型
+<input type=radio name="blood" value="4">AB型
+<input type=radio name="blood" value="5">宇宙人型
+</p>
+<p>飼っているペットは？（複数回答可）<br>
+    <input type=checkbox name="dog" value="1">犬
+    <input type=checkbox name="cat" value="2">猫
+    <input type=checkbox name="monkey" value="3">猿
+    <input type=checkbox name="monster" value="4">怪獣
+    <input type=checkbox name="alien" value="5">宇宙人
+    <input type=checkbox name="others" value="6">その他
+    </p>
+<p>
+    名前を入力してください
+    <input typetext size=7 maxlength=6 name="name">
+</p>
+
+<p>
+住所を入力してください(個人情報は保護しません!)<br>
+<textarea name=other rows=4 cols=40>
+例:東京都若葉区極楽町1-1
+</textarea>
+</p>
+
+<p>
+<input type=submit value="アンケート提出">
+<input type=reset value="クリア">
+</p>
